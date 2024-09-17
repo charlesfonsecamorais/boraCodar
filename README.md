@@ -8,7 +8,7 @@ Tecnologias Utilizadas:
 Backend
 - Java
 - Spring Boot;
-- PostgreSQL;
+- MySQL;
  
 Frontend Web
 - Next.JS;
