@@ -1,11 +1,24 @@
 package br.com.boracodar.boracodar.dto;
 
+import org.springframework.beans.BeanUtils;
+
+import br.com.boracodar.boracodar.entity.UsuarioEntity;
+
 public class UsuarioDto {
 	private Long id;
 	private String nome;
 	private String login;
 	private String senha;
 	private String email;
+	
+	
+	public UsuarioDto(UsuarioEntity usuario) {
+		BeanUtils.copyProperties(usuario, this);
+	}
+	
+	public UsuarioDto() {
+		
+	}
 	
 	
 	public Long getId() {

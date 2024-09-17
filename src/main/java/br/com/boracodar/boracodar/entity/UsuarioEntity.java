@@ -2,6 +2,9 @@ package br.com.boracodar.boracodar.entity;
 
 import java.util.Objects;
 
+import org.springframework.beans.BeanUtils;
+
+import br.com.boracodar.boracodar.dto.UsuarioDto;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -28,6 +31,15 @@ public class UsuarioEntity {
 	
 	@Column(nullable = false)
 	private String email;
+	
+	
+	public UsuarioEntity() {
+		
+	}
+	
+	public UsuarioEntity(UsuarioDto usuario) {
+		BeanUtils.copyProperties(usuario, this);
+	}
 	
 
 	public Long getId() {
