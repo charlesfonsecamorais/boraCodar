@@ -1,5 +1,9 @@
 package br.com.boracodar.boracodar.repository;
 
-public interface UsuarioRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import br.com.boracodar.boracodar.entity.UsuarioEntity;
+
+public interface UsuarioRepository extends JpaRepository<UsuarioEntity, Long>{
 
 }
