@@ -20,8 +20,8 @@ public class UsuarioService {
 		return usuarios.stream().map(UsuarioDto::new).toList();
 	}
 	
-	public void inserir(UsuarioDto usuario) {
-		UsuarioEntity usuarioEntity = new UsuarioEntity(usuario);
+	public void inserir(UsuarioDto usuarioDto) {
+		UsuarioEntity usuarioEntity = new UsuarioEntity(usuarioDto);
 		usuarioRepository.save(usuarioEntity);
 	}
 	
