@@ -3,18 +3,8 @@
 
 Projeto idealizado pelo Prof. Rogério Napoleão Jr, tendo a arquitetura da aplicação orientada a serviço.
 
-Tecnologias Utilizadas:
-
-Backend
+Tecnologias Utilizadas no Backend:
 - Java
 - Spring Boot;
 - MySQL;
  
-Frontend Web
-- Next.JS;
-- React;
-- Javascript;
-- Prime React;
-
-Frontend Mobile
-- React Native;
